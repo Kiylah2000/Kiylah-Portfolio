@@ -18,7 +18,10 @@ $(document).ready(function() {
 
     $(window).on("load resize", function() {
         if (window.matchesMedia("min-width:768px").matches) {
-            $(".content-inner")
+            $(".content-inner:not(.home)").mCustomScrollbar();
+        }
+        else {
+            $(".content-inner:not(home)").mCustomScrollbar("destroy");
         }
     });
 });
