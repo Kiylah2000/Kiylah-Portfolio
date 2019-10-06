@@ -7,80 +7,143 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/9287c1c657.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/path/to/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Kiylah's Portfolio</title>
 </head>
 
+<!-- Landing page -->
+
 <body class="h-100 d-flex flex-row align-items-lg-center">
-  <!-- Landing page -->
   <div class="container">
     <div class="row">
       <div class="col-md-10 offset-md-1">
         <div class="portfolio mt-5">
-          <aside class="sidebar d-none d-md-block">
+          <aside class="menu d-none d-md-block">
             <ul class="list-inline">
               <li class="nav-item">
-                <a href="#!" class="nav-link active">
+                <a href="#home" class="nav-link">
                   <div class="icon">
-                    <i class="fas fa-home"></i>
-                    <div>
-                      Home
+                    <i class="fas fa-home fa-lg"></i>
+                    Home
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="#!" class="nav-link active">
+                <a href="#aboutme" class="nav-link">
                   <div class="icon">
-                    <i class="far fa-user-circle"></i>
-                    <div>
-                      About Me
+                    <i class="far fa-user-circle fa-lg"></i>
+                    About Me
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="#!" class="nav-link active">
+                <a href="#portfolio" class="nav-link">
                   <div class="icon">
-                    <i class="fas fa-briefcase"></i>
-                    <div>
-                      Portfolio
+                    <i class="fas fa-briefcase fa-lg"></i>
+                    Portfolio
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="#!" class="nav-link active">
+                <a href="#resume" class="nav-link">
                   <div class="icon">
-                    <i class="fas fa-list-alt"></i>
-                    <div>
-                      Resume
+                    <i class="fas fa-list-alt fa-lg"></i>
+                    Resume
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="#!" class="nav-link active">
+                <a href="#contact" class="nav-link">
                   <div class="icon">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                      Contact
+                    <i class="fas fa-phone fa-lg"></i>
+                    Contact
                 </a>
               </li>
             </ul>
           </aside>
           <div class="content active" id="home">
-            <div class="content-outer py-4 h-100">
-              <div class="content-inner px-4 h-100 home">
-                <div class="portfolio-img-container">
-                  <img src="" class="img-fluid">
-                  <div>
-                    <div class="Name">
-                      <h3>Kiylah O'Brien</h3>
+          </div>
+          <div class="content" id="aboutme">
+            <div class="content-outer h-100 py-4">
+              <div class="content-inner h-100 px-4">
+                About
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio -->
+          <div class="content active" id="home">
+          </div>
+          <div class="content" id="portfolio">
+            <div class="content-outer h-100 py-4">
+              <div class="content-inner h-100 px-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h5 class="sub-title">Portfolio</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="img-container">
+                          <div class="overlay">Project 1</div>
+                          <img src="./Images/basil-cook-cuisine.jpg" class="img-fluid">
+                        </div>
                       </div>
-                      <div class="designation">
-                        Web Developer
+                      <div class="col-md-6">
+                        <div class="img-container">
+                          <div class="overlay">Project 2</div>
+                          <img src="./Images/coming-soon.jpg" class="img-fluid">
+                        </div>
                       </div>
-
+                      <div class="col-md-6">
+                        <div class="img-container">
+                          <div class="overlay">Project 3</div>
+                          <img src="./Images/coming-soon.jpg" class="img-fluid">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="img-container">
+                          <div class="overlay">Project 4</div>
+                          <img src="./Images/coming-soon.jpg" class="img-fluid">
+                        </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Resume -->
+          <div class="content active" id="home">
+          </div>
+          <div class="content" id="resume">
+            <div class="content-outer h-100 py-4">
+              <div class="content-inner h-100 px-4">
+                Resume
+              </div>
+            </div>
+          </div>
+          <!-- Contact -->
+          <div class="content active" id="home">
+          </div>
+          <div class="content" id="contact">
+            <div class="content-outer h-100 py-4">
+              <div class="content-inner h-100 px-4">
+                Contact
+              </div>
+            </div>
+          </div>
+
+          <div class="content-outer py-4 h-100">
+            <div class="content-inner px-4 h-100 home">
+              <div class="portfolio-img-container">
+                <img src="./Images/Kiylah2.png" class="img-fluid">
+                <div>
+                  <div class="Name">
+                    <h3>Kiylah O'Brien</h3>
+                  </div>
+                  <div class="designation">
+                    Web Developer
                   </div>
                 </div>
               </div>
@@ -112,6 +175,8 @@
 
   <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="portfolio.js"></script>
 </body>
 

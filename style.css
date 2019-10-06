@@ -1,6 +1,142 @@
-/* .sidebar {
-position: fixed;
-top: 0px;
-bottom: 0px;
-width: 200px;
-} */
+
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+
+:root{
+  --width: 90px;
+  --bodyBackground: #f7f7ff;
+  --portfolioMaxHeight: 532px;
+  --portfolio-background: #fefefe;
+  --menu-background: #14fff7;
+  --menu-foreground: #0a0f0d;
+  --menu-hover: #f1f1f1;
+  --subtitle-color: #333333;
+  --info-color: #999999;
+  --violet: #651fff;
+  --pink: #f50057;
+  --grey: #757575;
+}
+ body{
+   background-attachment: var(--bodyBackground);
+   font-family: 'Courgette', cursive;
+ }
+
+ .portfolio-img-container img {
+  height: 220px;
+  width: 200px;
+  overflow: hidden;
+}
+
+ .portfolio {
+   min-height: var(--porfolioMinHeight);
+   position: relative;
+   overflow: hidden;
+   border-radius: 4px;
+   border: 4px solid red;
+ }
+
+ /* Menu */
+
+ .portfolio .menu {
+   max-width: var(--width);
+   width: var(--width);
+   background-color: var(--portfolio-background);
+ }
+
+ .portfolio .menu ul{
+margin: 0;
+padding: 0;
+ }
+
+ .portfolio .menu ul a {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--menu-background);
+   color: var(--menu-foreground);
+   text-transform: capitalize;
+ }
+
+ .portfolio .menu ul a.active,
+ .portfolio .menu ul a:hover {
+   background-color: var(--menu-hover);
+ }
+
+ /* Content */
+
+ .portfolio .content {
+   position: relative;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: 10px auto;
+   background-color: var(--portfolio-background);
+   transition: all ease 1s;
+   overflow: hidden;
+
+ }
+
+ .portfolio .content .active {
+ visibility: visible;
+ opacity: 1;
+ transform: translateX(0px);
+ z-index: 10;
+}
+
+.portfolio .content .content-inner {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ .portfolio .content .content-inner .sub-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--subtitle-color);
+  margin: 10px auto;
+ }
+
+ .portfolio .content .content-inner .info {
+  text-align: justify;
+  font-size: 14px;
+  color: var(--info-color);
+ }
+
+ /* Portfolio Home */
+
+ #home {
+   background-image: url("./Images/628256\ copy.jpg");
+   background-repeat: no-repeat;
+   background-size: 700px 500px;
+ }
+
+ .portfolio #home .portfolio-img-container {
+   margin-left: 15%;
+   padding: 10px;
+ }
+ 
+
+.portfolio #home .designation {
+  margin-left: 8%;
+  font-size: 18px;
+}
+
+
+ @media (min-width: 768px){
+   .portfolio .content {
+     position: absolute;
+     margin: auto;
+     margin-left: var(--width);
+     transform: translateX(-10px);
+     z-index: 9;
+     opacity: 0;
+     visibility: hidden;
+
+   }
+   }
+
+
