@@ -111,12 +111,14 @@ padding: 0;
  #home {
    background-image: url("./Images/628256\ copy.jpg");
    background-repeat: no-repeat;
-   background-size: 700px 500px;
+   background-size: 680px 500px;
  }
 
  .portfolio #home .portfolio-img-container {
    margin-left: 45%;
    padding: 10px;
+   width: 100%;
+   max-width: 620px;
  }
  
 .portfolio #home .designation {
@@ -125,14 +127,38 @@ padding: 0;
 }
 
 
- @media (min-width: 980px) {
+ @media (min-width: 798px) {
    .portfolio .content {
      position: absolute;
      margin: auto;
      margin-left: var(--width);
      transform: translateX(-10px);
      z-index: 9;
-     opacity: 0;
+     opacity: 0%;
      visibility: hidden;
    }
  }
+
+ /* @media only screen and (min-width: 992px) {
+  .portfolio .content {
+    position: absolute;
+    margin: auto;
+    margin-left: var(--width);
+    transform: translateX(-10px);
+    z-index: 9;
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio .content {
+    position: absolute;
+    margin: auto;
+    margin-left: var(--width);
+    transform: translateX(-10px);
+    z-index: 9;
+    opacity: 0%;
+    visibility: hidden;
+  }
+} */
